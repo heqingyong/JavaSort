@@ -30,28 +30,28 @@ public class SortTest {
 		System.out.print("\nBefore sort:");
 		SortUtil.generateRandomData(data);
 		
-		data = SortUtil.switchBigSort(data);
+		data = SortUtil.directChooseBigSort(data);
 		System.out.print("\nAfter sort:");
 		SortUtil.printData(data);
 		
 		System.out.print("\n\nSwitch small sort:");
 		System.out.print("\nBefore sort:");
 		SortUtil.generateRandomData(data);
-		data = SortUtil.switchSmallSort(data);
+		data = SortUtil.directChooseSmallSort(data);
 		System.out.print("\nAfter sort:");
 		SortUtil.printData(data);
 		
 		System.out.print("\n\nBubble small sort:");
 		System.out.print("\nBefore sort:");
 		SortUtil.generateRandomData(data);
-		data = SortUtil.switchSmallSort(data);
+		data = SortUtil.directChooseSmallSort(data);
 		System.out.print("\nAfter sort:");
 		SortUtil.printData(data);
 		
 		System.out.print("\n\nBubble big sort:");
 		System.out.print("\nBefore sort:");
 		SortUtil.generateRandomData(data);
-		data = SortUtil.switchSmallSort(data);
+		data = SortUtil.directChooseSmallSort(data);
 		System.out.print("\nAfter sort:");
 		SortUtil.printData(data);
 	}

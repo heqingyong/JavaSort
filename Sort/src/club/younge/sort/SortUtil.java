@@ -39,12 +39,12 @@ public class SortUtil {
 		}
 	}
 	
-	public static final int[] switchBigSort(int[] data){
+	public static final int[] directChooseBigSort(int[] data){
 		int len = data.length;
 		int temp;
 		for (int i = 0; i < len; i++) {
 			for (int j = i + 1; j < len; j++) {
-				//½»»»ÅÅÐò£¬ ½µÐò
+				//Ö±½ÓÑ¡ÔñÅÅÐò£¬ ½µÐò
 				if(data[i] < data[j]){
 					temp = data[i];
 					data[i] = data[j];
@@ -55,12 +55,12 @@ public class SortUtil {
 		return data;
 	}
 	
-	public static final int[] switchSmallSort(int[] data){
+	public static final int[] directChooseSmallSort(int[] data){
 		int len = data.length;
 		int temp;
 		for (int i = 0; i < len; i++) {
 			for (int j = i + 1; j < len; j++) {
-				//½»»»ÅÅÐò£¬ ÉýÐò
+				//Ö±½ÓÑ¡ÔñÅÅÐò£¬ ÉýÐò
 				if(data[i] > data[j]){
 					temp = data[i];
 					data[i] = data[j];
