@@ -7,11 +7,14 @@
  * 
  */  
   
-package club.younge.test;  
+package club.younge.test;
+
+import club.younge.sort.SortUtil;
+
 /** 
  * @className:SortTest 
- * @function: TODO ADD FUNCTION.  
- * @reason:   TODO ADD REASON. 
+ * @function: 排序测试  
+ * @reason:   
  * @date:     2016年8月22日 下午11:56:50
  * @author   Younge 
  * @version   
@@ -20,5 +23,37 @@ package club.younge.test;
  */
 public class SortTest {
 
+	public static void main(String[] args) {
+		int[] data = new int[20];
+		
+		System.out.print("Switch big sort:");
+		System.out.print("\nBefore sort:");
+		SortUtil.generateRandomData(data);
+		
+		data = SortUtil.switchBigSort(data);
+		System.out.print("\nAfter sort:");
+		SortUtil.printData(data);
+		
+		System.out.print("\n\nSwitch small sort:");
+		System.out.print("\nBefore sort:");
+		SortUtil.generateRandomData(data);
+		data = SortUtil.switchSmallSort(data);
+		System.out.print("\nAfter sort:");
+		SortUtil.printData(data);
+		
+		System.out.print("\n\nBubble small sort:");
+		System.out.print("\nBefore sort:");
+		SortUtil.generateRandomData(data);
+		data = SortUtil.switchSmallSort(data);
+		System.out.print("\nAfter sort:");
+		SortUtil.printData(data);
+		
+		System.out.print("\n\nBubble big sort:");
+		System.out.print("\nBefore sort:");
+		SortUtil.generateRandomData(data);
+		data = SortUtil.switchSmallSort(data);
+		System.out.print("\nAfter sort:");
+		SortUtil.printData(data);
+	}
 }
 
