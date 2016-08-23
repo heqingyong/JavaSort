@@ -21,6 +21,7 @@ import club.younge.sort.SortUtil;
  * @since    JDK 1.8 
  * @see       
  */
+@Deprecated
 public class SortTest {
 
 	public static void main(String[] args) {

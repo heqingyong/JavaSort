@@ -21,6 +21,7 @@ import java.util.Random;
  * @since    JDK 1.8 
  * @see       
  */
+@Deprecated
 public class SortUtil {
 	
 	public static final void generateRandomData(int[] data){
